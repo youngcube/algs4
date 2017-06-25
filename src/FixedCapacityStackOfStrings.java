@@ -24,6 +24,7 @@ public class FixedCapacityStackOfStrings {
 
     public static void main(String[] args){
 
+
         FixedCapacityStackOfStrings s = new FixedCapacityStackOfStrings(100);
         while (!StdIn.isEmpty()){
             String item = StdIn.readString();
