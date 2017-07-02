@@ -25,9 +25,9 @@ public class Selection {
 
     public static void selectionSort(Comparable[] a) {
         int N = a.length;
-        // 将a[i] 和 a[i+1...N]中的最小元素交换
+        // 将a[i] 和 a[i+1]中的最小元素交换
         for (int i = 0; i < N; i++) {
-            int min = i; // 最小元素的索引
+            int min = i; // 最小元素的索引，假设是第0个
             for (int j = i + 1; j < N; j++) {
                 if (less(a[j], a[min])) {
                     min = j;
@@ -46,8 +46,14 @@ public class Selection {
         }
     }
 
+    // 判断是否前者小于后者
     public static boolean less(Comparable v, Comparable w){
         return v.compareTo(w) < 0;
+    }
+
+    // 判断是否前者大于后者（用于倒叙排列）
+    public static boolean more(Comparable v, Comparable w){
+        return v.compareTo(w) > 0;
     }
 
     public static void exch(Comparable[] a, int i, int j){
@@ -74,28 +80,28 @@ public class Selection {
 
     public static void main(String[] args){
 
-        String alg1 = "Insert";
-        String alg2 = "Select";
-        int N = 1000;
-        int T = 100;
-
-        double t1 = timeRandomInput(alg1, N, T);
-        double t2 = timeRandomInput(alg2, N, T);
-
-        StdOut.printf("For %d random Doubles\n %s is",N, alg1);
-        StdOut.printf("%.1f times faster than %s\n",t2/t1, alg2);
-
-
+//        String alg1 = "Insert";
+//        String alg2 = "Select";
+//        int N = 1000;
+//        int T = 100;
+//
+//        double t1 = timeRandomInput(alg1, N, T);
+//        double t2 = timeRandomInput(alg2, N, T);
+//
+//        StdOut.printf("For %d random Doubles\n %s is",N, alg1);
+//        StdOut.printf("%.1f times faster than %s\n",t2/t1, alg2);
 
 
 
 
-//        StdOut.println("Please input something");
-//        Comparable[] a = In.readStrings();
-//        StdOut.println("Running");
-//        selectionSort(a);
-//        assert isSorted(a);
-//        show(a);
+
+
+        StdOut.println("Please input something");
+        Comparable[] a = In.readStrings();
+        StdOut.println("Running");
+        insertSort(a);
+        assert isSorted(a);
+        show(a);
 
 
 
