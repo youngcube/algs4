@@ -80,28 +80,28 @@ public class Selection {
 
     public static void main(String[] args){
 
-//        String alg1 = "Insert";
-//        String alg2 = "Select";
-//        int N = 1000;
-//        int T = 100;
-//
-//        double t1 = timeRandomInput(alg1, N, T);
-//        double t2 = timeRandomInput(alg2, N, T);
-//
-//        StdOut.printf("For %d random Doubles\n %s is",N, alg1);
-//        StdOut.printf("%.1f times faster than %s\n",t2/t1, alg2);
+        String alg1 = "Insert";
+        String alg2 = "Select";
+        int N = 1000;
+        int T = 100;
+
+        double t1 = timeRandomInput(alg1, N, T);
+        double t2 = timeRandomInput(alg2, N, T);
+
+        StdOut.printf("For %d random Doubles\n %s is",N, alg1);
+        StdOut.printf("%.1f times faster than %s\n",t2/t1, alg2);
 
 
 
 
 
 
-        StdOut.println("Please input something");
-        Comparable[] a = In.readStrings();
-        StdOut.println("Running");
-        insertSort(a);
-        assert isSorted(a);
-        show(a);
+//        StdOut.println("Please input something");
+//        Comparable[] a = In.readStrings();
+//        StdOut.println("Running");
+//        insertSort(a);
+//        assert isSorted(a);
+//        show(a);
 
 
 
