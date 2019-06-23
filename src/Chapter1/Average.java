@@ -1,6 +1,8 @@
-
+package Chapter1;
 
 import edu.princeton.cs.algs4.*;
+
+import java.util.ArrayList;
 
 public class Average {
     public static void main(String[] args) {

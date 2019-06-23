@@ -1,3 +1,5 @@
+package Chapter1;
+
 import edu.princeton.cs.algs4.*;
 
 /**
