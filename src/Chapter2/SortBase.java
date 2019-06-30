@@ -24,7 +24,7 @@ public abstract class SortBase implements SortInterface {
     public final void show(Comparable[] a)
     {
         for (int i =0;i<a.length;i++){
-            StdOut.println(a[i] + "");
+            StdOut.print(a[i] + ",");
         }
         StdOut.println();
     }
@@ -48,7 +48,8 @@ public abstract class SortBase implements SortInterface {
 
     public void test(){
 //        Integer[] a = genRandomArray(9999, 10);
-        Integer[]a = {2, 9, 5, 8, 1, 6};
+        Integer[]a = {2, 9, 9, 10, 5, 8, 1, 6};
+        this.show(a);
         this.sort(a);
         assert this.isSorted(a);
         this.show(a);
