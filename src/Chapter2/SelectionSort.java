@@ -1,5 +1,9 @@
 package Chapter2;
 
+//选择排序
+//找到元素中最小的那个元素，将它和第一个元素交换位置（如果第一个元素就是最小元素，那么它就和自己交换）
+//……
+//这样既可完成排序
 public class SelectionSort extends SortBase implements SortInterface {
     @Override
     public void sort(Comparable[] a) {
