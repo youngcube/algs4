@@ -2,7 +2,7 @@ package Chapter2;
 
 import edu.princeton.cs.algs4.StdOut;
 
-public class MergeSort {
+public class MergeSort extends SortBase {
     public static void mergeSort(int[] list){
         if (list.length > 1){
             int[] leftList = new int[list.length / 2];
